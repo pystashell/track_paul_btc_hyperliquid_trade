@@ -1,0 +1,32 @@
+# Python runtime files
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+
+# Test and editor caches
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Local secrets and logs
+.env
+.env.*
+*.log
+
+# Local-only validation reports and temporary publish directories
+.local/
+outputs/
+.data-stage-*/
+.data-backup-*/
+.data-failed-*/
+.data-dry-run-*/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini

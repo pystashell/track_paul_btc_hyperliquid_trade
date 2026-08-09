@@ -1,0 +1,92 @@
+name: Update Paul BTC Hyperliquid history
+
+on:
+  # GitHub cron uses UTC. 00:23 UTC is 08:23 in Asia/Shanghai.
+  schedule:
+    - cron: "23 0 * * *"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish the validated update to main"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paul-btc-hyperliquid-daily-update
+  cancel-in-progress: false
+
+jobs:
+  update-main:
+    name: Validate, update, and commit main
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Run merge-rule tests
+        run: python -B -m unittest discover -s tests -v
+
+      - name: Validate the existing archive
+        run: python -B tracker.py validate --data-dir data --report .local/before-update.json
+
+      - name: Fetch and validate today's data without publishing
+        if: github.event_name == 'workflow_dispatch' && inputs.publish == false
+        run: python -B tracker.py update --dry-run --data-dir data --report .local/update.json
+
+      - name: Fetch and merge today's Hyperliquid data
+        if: github.event_name == 'schedule' || inputs.publish == true
+        run: python -B tracker.py update --data-dir data --report .local/update.json
+
+      - name: Independently validate the archive after the operation
+        run: python -B tracker.py validate --data-dir data --report .local/after-update.json
+
+      - name: Ensure only canonical API data changed
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t changed < <(git status --porcelain --untracked-files=all | awk '{print $2}')
+
+          unexpected=()
+          for path in "${changed[@]}"; do
+            if [[ ! "$path" =~ ^data/(clearinghouseState|frontendOpenOrders|historicalOrders|openOrders|spotClearinghouseState|userFillsByTime|userFunding|userNonFundingLedgerUpdates)\.json$ ]]; then
+              unexpected+=("$path")
+            fi
+          done
+
+          if (( ${#unexpected[@]} > 0 )); then
+            printf 'Unexpected changed path: %s\n' "${unexpected[@]}" >&2
+            exit 1
+          fi
+
+          if (( ${#changed[@]} == 0 )); then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push the validated data to main
+        if: steps.changes.outputs.has_changes == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/*.json
+          git diff --cached --check
+          git commit -m "data: update Paul BTC history $(date -u +%F)"
+          git push origin HEAD:main
