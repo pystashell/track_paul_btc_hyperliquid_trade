@@ -90,3 +90,22 @@ jobs:
           git diff --cached --check
           git commit -m "data: update Paul BTC history $(date -u +%F)"
           git push origin HEAD:main
+
+      - name: Notify the Cloudflare dashboard about the new source commit
+        if: steps.changes.outputs.has_changes == 'true'
+        shell: bash
+        env:
+          DASHBOARD_DISPATCH_TOKEN: ${{ secrets.DASHBOARD_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$DASHBOARD_DISPATCH_TOKEN" ]]; then
+            echo "::notice::DASHBOARD_DISPATCH_TOKEN is not configured; the dashboard's daily fallback will sync this commit."
+            exit 0
+          fi
+
+          SOURCE_SHA="$(git rev-parse HEAD)"
+          GH_TOKEN="$DASHBOARD_DISPATCH_TOKEN" gh api \
+            --method POST \
+            repos/pystashell/visualize_paul_btc_hyperliquid_trade/dispatches \
+            --raw-field event_type=paulwei-data-updated \
+            --raw-field "client_payload[source_sha]=$SOURCE_SHA"
