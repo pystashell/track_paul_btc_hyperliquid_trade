@@ -90,3 +90,34 @@ jobs:
           git diff --cached --check
           git commit -m "data: update Paul BTC history $(date -u +%F)"
           git push origin HEAD:main
+
+      # The dashboard repository rebuilds and redeploys on this event. Without it
+      # the only path is its own daily cron, which means two independently
+      # scheduled jobs have to stay in order: this one is configured for 00:23
+      # UTC and the dashboard for 01:10, but GitHub routinely starts both an hour
+      # or more late, leaving a real gap of about twenty minutes. If this run
+      # slips further than that one day, the dashboard builds yesterday's data
+      # and reports success.
+      #
+      # The token is optional on purpose. Without it this step logs a notice and
+      # returns, so the daily cron keeps working exactly as before and a missing
+      # secret never fails the crawl that produced good data.
+      - name: Notify the dashboard repository about the new source commit
+        if: steps.changes.outputs.has_changes == 'true'
+        shell: bash
+        env:
+          DASHBOARD_DISPATCH_TOKEN: ${{ secrets.DASHBOARD_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${DASHBOARD_DISPATCH_TOKEN:-}" ]]; then
+            echo "::notice::DASHBOARD_DISPATCH_TOKEN is not set; the dashboard's daily cron remains the only trigger."
+            exit 0
+          fi
+          SOURCE_SHA="$(git rev-parse HEAD)"
+          export GH_TOKEN="$DASHBOARD_DISPATCH_TOKEN"
+          gh api \
+            --method POST \
+            repos/pystashell/visualize_paul_btc_hyperliquid_trade/dispatches \
+            --raw-field event_type=paulwei-data-updated \
+            --raw-field "client_payload[source_sha]=$SOURCE_SHA"
+          echo "::notice::Dispatched paulwei-data-updated for $SOURCE_SHA"
