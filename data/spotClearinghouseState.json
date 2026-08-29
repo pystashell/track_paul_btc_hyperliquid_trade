@@ -1586,6 +1586,52 @@
           ]
         ]
       }
+    },
+    {
+      "runId": "20260829T071135.650401Z-8e568e85",
+      "capturedAt": "2026-08-29T07:11:38.783534+00:00",
+      "response": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "token": 0,
+            "total": "117980.524752",
+            "hold": "62955.283322",
+            "entryNtl": "0.0"
+          },
+          {
+            "coin": "USDE",
+            "token": 235,
+            "total": "0.0",
+            "hold": "0.0",
+            "entryNtl": "0.0"
+          },
+          {
+            "coin": "USDT0",
+            "token": 268,
+            "total": "0.0",
+            "hold": "0.0",
+            "entryNtl": "0.0"
+          },
+          {
+            "coin": "USDH",
+            "token": 360,
+            "total": "0.0",
+            "hold": "0.0",
+            "entryNtl": "0.0"
+          }
+        ],
+        "tokenToAvailableAfterMaintenance": [
+          [
+            0,
+            "116688.01019"
+          ],
+          [
+            360,
+            "0.0"
+          ]
+        ]
+      }
     }
   ]
 }
