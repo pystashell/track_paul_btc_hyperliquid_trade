@@ -3,6 +3,28 @@
     "order": {
       "coin": "BTC",
       "side": "B",
+      "limitPx": "76514.0",
+      "sz": "0.0",
+      "oid": 535022933524,
+      "timestamp": 1788443357197,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "filled",
+    "statusTimestamp": 1789082098834
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
       "limitPx": "74791.0",
       "sz": "0.05",
       "oid": 535023055838,
