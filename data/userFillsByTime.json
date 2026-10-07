@@ -6252,5 +6252,27 @@
     "tid": 1048529916302410,
     "feeToken": "USDC",
     "twapId": null
+  },
+  {
+    "coin": "BTC",
+    "px": "83186.0",
+    "sz": "0.05",
+    "side": "B",
+    "time": 1791338481048,
+    "startPosition": "1.78557",
+    "dir": "Open Long",
+    "closedPnl": "0.0",
+    "hash": "0x88beb72b290d17248a38044601b724013400cf10c40035f62c87627de800f10f",
+    "oid": 563881446323,
+    "crossed": false,
+    "fee": "0.623895",
+    "tid": 7085390861766,
+    "liquidation": {
+      "liquidatedUser": "0xf855fad4fe75406295fde3a8c6ee766f56dc1b36",
+      "markPx": "83640.0",
+      "method": "market"
+    },
+    "feeToken": "USDC",
+    "twapId": null
   }
 ]
