@@ -62219,6 +62219,138 @@
     "order": {
       "coin": "BTC",
       "side": "B",
+      "limitPx": "83026.0",
+      "sz": "0.14864",
+      "oid": 236358901614,
+      "timestamp": 1763228314066,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.14864",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228322413
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "84854.0",
+      "sz": "0.07893",
+      "oid": 236358433563,
+      "timestamp": 1763228284776,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.07893",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228318388
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "82222.0",
+      "sz": "0.14864",
+      "oid": 236358867541,
+      "timestamp": 1763228310326,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.14864",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228314066
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "83333.0",
+      "sz": "0.07999",
+      "oid": 236358641264,
+      "timestamp": 1763228295150,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.07999",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228305400
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "85555.0",
+      "sz": "0.07791",
+      "oid": 236357696336,
+      "timestamp": 1763228232684,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.07791",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228286652
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "84444.0",
+      "sz": "0.07893",
+      "oid": 236357768640,
+      "timestamp": 1763228237070,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.07893",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228284776
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
       "limitPx": "86222.0",
       "sz": "0.07731",
       "oid": 236358230455,
@@ -62236,6 +62368,72 @@
     },
     "status": "canceled",
     "statusTimestamp": 1763228279024
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "86666.0",
+      "sz": "0.03845",
+      "oid": 236357347110,
+      "timestamp": 1763228207018,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.03845",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228214320
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "88023.0",
+      "sz": "0.02499",
+      "oid": 236356230815,
+      "timestamp": 1763228134998,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.02499",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228194572
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "88912.0",
+      "sz": "0.02499",
+      "oid": 236356018574,
+      "timestamp": 1763228120852,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.02499",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1763228134998
   },
   {
     "order": {
