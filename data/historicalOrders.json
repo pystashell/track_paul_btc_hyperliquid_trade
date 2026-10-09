@@ -3,6 +3,50 @@
     "order": {
       "coin": "BTC",
       "side": "B",
+      "limitPx": "80422.0",
+      "sz": "0.05",
+      "oid": 569202488012,
+      "timestamp": 1791493238784,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "open",
+    "statusTimestamp": 1791493238784
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "80262.0",
+      "sz": "0.05",
+      "oid": 563881663443,
+      "timestamp": 1790971672535,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1791493238784
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
       "limitPx": "83186.0",
       "sz": "0.0",
       "oid": 563881446323,
