@@ -4506,6 +4506,27 @@
           ]
         ]
       }
+    },
+    {
+      "runId": "20261107T061553.067156Z-6be1ecce",
+      "capturedAt": "2026-11-07T06:15:56.688022+00:00",
+      "response": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "token": 0,
+            "total": "110879.237982",
+            "hold": "67927.682385",
+            "entryNtl": "0.0"
+          }
+        ],
+        "tokenToAvailableAfterMaintenance": [
+          [
+            0,
+            "108992.251533"
+          ]
+        ]
+      }
     }
   ]
 }
