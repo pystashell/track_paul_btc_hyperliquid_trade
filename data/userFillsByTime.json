@@ -6325,5 +6325,22 @@
     "tid": 664574476872788,
     "feeToken": "USDC",
     "twapId": null
+  },
+  {
+    "coin": "BTC",
+    "px": "74498.0",
+    "sz": "0.05",
+    "side": "B",
+    "time": 1794174916592,
+    "startPosition": "1.98557",
+    "dir": "Open Long",
+    "closedPnl": "0.0",
+    "hash": "0xe6a9246ba832bc1fe82204485f2fe5011a003c514335daf18a71cfbe6736960a",
+    "oid": 576512850342,
+    "crossed": false,
+    "fee": "0.558735",
+    "tid": 168923570955195,
+    "feeToken": "USDC",
+    "twapId": null
   }
 ]

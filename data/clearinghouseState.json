@@ -5018,6 +5018,52 @@
         ],
         "time": 1794118911159
       }
+    },
+    {
+      "runId": "20261109T065508.614858Z-52ed6e3b",
+      "capturedAt": "2026-11-09T06:55:12.371230+00:00",
+      "response": {
+        "marginSummary": {
+          "accountValue": "61993.494716",
+          "totalNtlPos": "151324.2738",
+          "totalRawUsd": "-89330.779084",
+          "totalMarginUsed": "50441.4246"
+        },
+        "crossMarginSummary": {
+          "accountValue": "61993.494716",
+          "totalNtlPos": "151324.2738",
+          "totalRawUsd": "-89330.779084",
+          "totalMarginUsed": "50441.4246"
+        },
+        "crossMaintenanceMarginUsed": "1891.553422",
+        "withdrawable": "0.0",
+        "assetPositions": [
+          {
+            "type": "oneWay",
+            "position": {
+              "coin": "BTC",
+              "szi": "2.03557",
+              "leverage": {
+                "type": "cross",
+                "value": 3
+              },
+              "entryPx": "69671.6",
+              "positionValue": "151324.2738",
+              "unrealizedPnl": "9502.764654",
+              "returnOnEquity": "0.2010153053",
+              "liquidationPx": "21837.3097498956",
+              "marginUsed": "50441.4246",
+              "maxLeverage": 40,
+              "cumFunding": {
+                "allTime": "4347.224217",
+                "sinceOpen": "3908.33761",
+                "sinceChange": "17.130239"
+              }
+            }
+          }
+        ],
+        "time": 1794207312102
+      }
     }
   ]
 }
