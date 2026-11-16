@@ -2,6 +2,116 @@
   {
     "order": {
       "coin": "BTC",
+      "side": "A",
+      "limitPx": "67678.0",
+      "sz": "0.05",
+      "oid": 605968366267,
+      "timestamp": 1794735245883,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "open",
+    "statusTimestamp": 1794735245883
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "A",
+      "limitPx": "68039.0",
+      "sz": "0.05",
+      "oid": 605143475079,
+      "timestamp": 1794675599599,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1794735245883
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "A",
+      "limitPx": "66403.0",
+      "sz": "0.05",
+      "oid": 605968318074,
+      "timestamp": 1794735240558,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "open",
+    "statusTimestamp": 1794735240558
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "A",
+      "limitPx": "66557.0",
+      "sz": "0.05",
+      "oid": 605143421500,
+      "timestamp": 1794675595557,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "canceled",
+    "statusTimestamp": 1794735240558
+  },
+  {
+    "order": {
+      "coin": "BTC",
+      "side": "B",
+      "limitPx": "60123.0",
+      "sz": "0.05",
+      "oid": 605921088776,
+      "timestamp": 1794731508356,
+      "triggerCondition": "N/A",
+      "isTrigger": false,
+      "triggerPx": "0.0",
+      "children": [],
+      "isPositionTpsl": false,
+      "reduceOnly": false,
+      "orderType": "Limit",
+      "origSz": "0.05",
+      "tif": "Gtc",
+      "cloid": null
+    },
+    "status": "open",
+    "statusTimestamp": 1794731508356
+  },
+  {
+    "order": {
+      "coin": "BTC",
       "side": "B",
       "limitPx": "54133.0",
       "sz": "0.05",
