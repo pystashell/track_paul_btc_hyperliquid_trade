@@ -20005,6 +20005,192 @@
           "origSz": "0.16"
         }
       ]
+    },
+    {
+      "runId": "20261122T070837.584504Z-35223af5",
+      "capturedAt": "2026-11-22T07:08:40.782996+00:00",
+      "response": [
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "48794.0",
+          "sz": "0.1",
+          "oid": 612334590538,
+          "timestamp": 1795244235600,
+          "origSz": "0.1"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "72762.0",
+          "sz": "0.2",
+          "oid": 612330519722,
+          "timestamp": 1795243969947,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "72077.0",
+          "sz": "0.2",
+          "oid": 612330440674,
+          "timestamp": 1795243964242,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "71337.0",
+          "sz": "0.2",
+          "oid": 612330400738,
+          "timestamp": 1795243961527,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "69748.0",
+          "sz": "0.2",
+          "oid": 612330287688,
+          "timestamp": 1795243952798,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "68926.0",
+          "sz": "0.15",
+          "oid": 612330218641,
+          "timestamp": 1795243949064,
+          "origSz": "0.15"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "68050.0",
+          "sz": "0.1",
+          "oid": 612330038594,
+          "timestamp": 1795243941770,
+          "origSz": "0.1"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "66214.0",
+          "sz": "0.1",
+          "oid": 612329966019,
+          "timestamp": 1795243939410,
+          "origSz": "0.1"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "67255.0",
+          "sz": "0.1",
+          "oid": 612329895085,
+          "timestamp": 1795243936104,
+          "origSz": "0.1"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "70543.0",
+          "sz": "0.2",
+          "oid": 612329506524,
+          "timestamp": 1795243914043,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "64954.0",
+          "sz": "0.05",
+          "oid": 612329107677,
+          "timestamp": 1795243892549,
+          "origSz": "0.05"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "63139.0",
+          "sz": "0.05",
+          "oid": 612327983196,
+          "timestamp": 1795243842356,
+          "origSz": "0.05"
+        },
+        {
+          "coin": "BTC",
+          "side": "A",
+          "limitPx": "61470.0",
+          "sz": "0.05",
+          "oid": 612327242980,
+          "timestamp": 1795243802420,
+          "origSz": "0.05"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "54133.0",
+          "sz": "0.05",
+          "oid": 605468829014,
+          "timestamp": 1794696960419,
+          "origSz": "0.05"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "38993.0",
+          "sz": "0.2",
+          "oid": 605467517926,
+          "timestamp": 1794696875253,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "40732.0",
+          "sz": "0.2",
+          "oid": 605467426168,
+          "timestamp": 1794696870826,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "44377.0",
+          "sz": "0.2",
+          "oid": 605466004435,
+          "timestamp": 1794696792003,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "51300.0",
+          "sz": "0.05",
+          "oid": 605465441603,
+          "timestamp": 1794696759943,
+          "origSz": "0.05"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "42363.0",
+          "sz": "0.2",
+          "oid": 605144996653,
+          "timestamp": 1794675678961,
+          "origSz": "0.2"
+        },
+        {
+          "coin": "BTC",
+          "side": "B",
+          "limitPx": "46349.0",
+          "sz": "0.16",
+          "oid": 605074625687,
+          "timestamp": 1794671378132,
+          "origSz": "0.16"
+        }
+      ]
     }
   ]
 }
